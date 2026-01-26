@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Girly gift finder palette - soft pinks, purples, corals */
+    --background: 320 50% 99%;
+    --foreground: 330 30% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 330 30% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 30% 20%;
+
+    /* Rose pink primary */
+    --primary: 330 81% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 330 100% 85%;
+
+    /* Lavender secondary */
+    --secondary: 270 60% 92%;
+    --secondary-foreground: 270 50% 30%;
+
+    /* Soft muted tones */
+    --muted: 300 20% 96%;
+    --muted-foreground: 330 20% 50%;
+
+    /* Coral accent */
+    --accent: 15 85% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 320 30% 90%;
+    --input: 320 30% 90%;
+    --ring: 330 81% 65%;
+
+    --radius: 1rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(330 81% 65%), hsl(270 70% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(330 100% 95%), hsl(270 60% 92%));
+    --gradient-accent: linear-gradient(135deg, hsl(330 81% 65%), hsl(15 85% 70%));
+    
+    /* Shadows */
+    --shadow-soft: 0 10px 40px -10px hsl(330 81% 65% / 0.2);
+    --shadow-glow: 0 0 30px hsl(330 100% 85% / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode with purple-pink tones */
+    --background: 280 30% 8%;
+    --foreground: 320 50% 98%;
+
+    --card: 280 30% 12%;
+    --card-foreground: 320 50% 98%;
+
+    --popover: 280 30% 12%;
+    --popover-foreground: 320 50% 98%;
+
+    --primary: 330 81% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 330 100% 75%;
+
+    --secondary: 270 40% 20%;
+    --secondary-foreground: 270 60% 92%;
+
+    --muted: 280 30% 18%;
+    --muted-foreground: 320 20% 70%;
+
+    --accent: 15 75% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 280 30% 20%;
+    --input: 280 30% 20%;
+    --ring: 330 81% 65%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(330 81% 55%), hsl(270 70% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(280 30% 15%), hsl(270 40% 22%));
+    --gradient-accent: linear-gradient(135deg, hsl(330 71% 55%), hsl(15 75% 60%));
+    
+    --shadow-soft: 0 10px 40px -10px hsl(330 81% 45% / 0.3);
+    --shadow-glow: 0 0 30px hsl(330 100% 65% / 0.2);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .dark .glass-card {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
