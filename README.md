@@ -4,7 +4,7 @@ The centralized administrative dashboard and management portal for the **GiftFin
 
 ## ✨ Features
 - **User & Account Management:** Monitor active accounts, review user statuses, and manage role-based permissions.
-- ** Analytics & Logs:** Track recommendation generation metrics and system usage patterns.
+- **Analytics & Logs:** Track recommendation generation metrics and system usage patterns.
 - **Dynamic Content Control:** Configure gift categories, curation rules, and promotional items in real time.
 - **Secure Authentication:** Protected admin routing synced with backend database security policies.
 
