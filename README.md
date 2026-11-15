@@ -26,15 +26,5 @@ The centralized administrative dashboard and management portal for the **GiftFin
 
 npm install
 
-Code snippet
-VITE_API_URL=http://localhost:5000/api
-VITE_SUPABASE_URL=your_supabase_project_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-Start the development server:
-
 
 npm run dev
-
-Copyright (c) 2026 Amal Barakat. All Rights Reserved. See the LICENSE file for details.
-
-dcss` `vite` `admin-panel` `supabase` `dashboard`
