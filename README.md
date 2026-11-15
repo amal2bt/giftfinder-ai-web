@@ -1,52 +1,40 @@
+# 👑 GiftFinder AI — Web Admin Panel & Control Center
+
+The centralized administrative dashboard and management portal for the **GiftFinder AI** ecosystem. Engineered to oversee user accounts, monitor AI recommendation logs, configure system-wide gifting categories, and manage real-time application data.
+
+## ✨ Features
+- **User & Account Management:** Monitor active accounts, review user statuses, and manage role-based permissions.
+- **AI Analytics & Logs:** Track recommendation generation metrics and system usage patterns.
+- **Dynamic Content Control:** Configure gift categories, curation rules, and promotional items in real time.
+- **Secure Authentication:** Protected admin routing synced with backend database security policies.
+
+## 🛠️ Tech Stack
+- **Frontend:** React, TypeScript, Tailwind CSS, Vite
+- **Backend Sync & Database:** Supabase (PostgreSQL), RESTful API integration
+- **State Management & Routing:** React Router, Context API
+
+## 🔗 Ecosystem Repositories
+- **Backend API:** [giftfinder-ai-backend](https://github.com/amal2bt/giftfinder-ai-backend)
+- **Mobile App:** [giftfinder-ai-mobile](https://github.com/amal2bt/giftfinder-ai-mobile)
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/amal2bt/giftfinder-ai-web.git](https://github.com/amal2bt/giftfinder-ai-web.git)
+   Install dependencies:
+
+npm install
+
+Code snippet
+VITE_API_URL=http://localhost:5000/api
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+Start the development server:
 
 
-**Use your preferred IDE**
-
-
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Copyright (c) 2026 Amal Barakat. All Rights Reserved. See the LICENSE file for details.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-Email: admin@giftfinder.com
-Username: testadmin
-Password: admin123
-Role: admin
+dcss` `vite` `admin-panel` `supabase` `dashboard`
