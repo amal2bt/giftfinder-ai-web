@@ -25,6 +25,7 @@ The centralized administrative dashboard and management portal for the **GiftFin
    Install dependencies:
 
 npm install
-
-
 npm run dev
+
+## 📄 License
+Copyright (c) 2026 Amal Barakat. All Rights Reserved. See the [LICENSE](./LICENSE) file for details.
